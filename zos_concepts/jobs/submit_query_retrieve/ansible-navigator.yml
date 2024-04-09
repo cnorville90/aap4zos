@@ -1,0 +1,9 @@
+---
+ansible-navigator:
+  execution-environment:
+    image: quay.io/cnorvill/ee-norville:v1.3
+    pull:
+      policy: missing
+  playbook-artifact:
+    enable: false
+  mode: stdout
