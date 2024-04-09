@@ -1,9 +1,11 @@
 
-- hosts: zos_host
+---
+- name: Execute TSO COmmands on a Z/OS System
+  hosts: all
   collections:
     - ibm.ibm_zos_core
   gather_facts: false
-  environment: "{{ environment_vars }}"
+  
   tasks:
 
     - block:
